@@ -73,7 +73,7 @@ class BoundingBoxOverlay( context: Context , attributeSet: AttributeSet )
     }
 
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         if (faceBoundingBoxes != null) {
             if (!areDimsInit) {
                 val viewWidth = canvas!!.width.toFloat()
